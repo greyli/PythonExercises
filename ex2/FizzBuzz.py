@@ -4,14 +4,4 @@
 :website: withlihui.com
 Let computer guess a number
 """
-numbers = range(1,101)
-
-for i in numbers:
-    if i%3==0 and i%5==0:
-        print 'FizzBuzz'
-    elif i%3==0:
-        print 'Fizz'
-    elif i%5==0:
-        print 'Buzz'
-    else:
-        print i
+for i in range(101): print((('Fizz' if i % 3 == 2 else '') + ('Buzz' if i % 5 == 4 else '')) or i+1)
